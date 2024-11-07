@@ -10,10 +10,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
             <div class="card h-100">
               <img src=${photo.url} class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">${photo.title}</p>
+                <p class="card-text fs-4">${photo.title}</p>
               </div>
             </div>
           </div>
         </div>`;
+    });
+
+    const generatedCards = document.querySelectorAll(".card");
+
+    generatedCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        alert("ao");
+      });
     });
   });

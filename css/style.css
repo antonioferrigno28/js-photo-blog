@@ -1,7 +1,8 @@
 body {
   background-image: url("../img/cork.png");
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Annie Use Your Telescope", cursive;
   background-size: cover;
+  font-weight: 400;
 }
 
 #header-full {
