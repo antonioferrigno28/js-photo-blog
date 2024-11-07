@@ -1,4 +1,5 @@
 const photosRow = document.getElementById("photos-row");
+const backButton = document.getElementById("back-button");
 
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((result) => result.json())
@@ -18,10 +19,6 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     });
 
     const generatedCards = document.querySelectorAll(".card");
-
-    generatedCards.forEach((card) => {
-      card.addEventListener("click", () => {
-        alert("ao");
-      });
-    });
+    const imageOverlay = document.getElementById("image-overlay");
+    const overlayImage = imageOverlay.querySelector("img");
   });
