@@ -19,17 +19,17 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     });
 
     const generatedCards = document.querySelectorAll(".card");
-    const imageOverlay = document.getElementById("image-overlay");
-    const overlayImage = imageOverlay.querySelector("img").src;
+    const imageOverlayWindow = document.getElementById("image-overlay");
+    const overlayImage = imageOverlayWindow.querySelector("img");
 
     generatedCards.forEach((card) => {
       card.addEventListener("click", () => {
         const imageSrc = card.querySelector("img").src;
         overlayImage.src = imageSrc;
-        imageOverlay.classList.add("show");
+        imageOverlayWindow.classList.add("show");
       });
     });
     backButton.addEventListener("click", () => {
-      imageOverlay.classList.remove("show");
+      imageOverlayWindow.classList.remove("show");
     });
   });
