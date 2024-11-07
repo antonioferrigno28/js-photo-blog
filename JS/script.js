@@ -25,8 +25,8 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     generatedCards.forEach((card) => {
       card.addEventListener("click", () => {
         const imageSrc = card.querySelector("img").src;
-        overlayImage = imageSrc;
-        imageOverlay.classList.add("Show");
+        overlayImage.src = imageSrc;
+        imageOverlay.classList.add("show");
       });
     });
     backButton.addEventListener("click", () => {
