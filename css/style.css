@@ -3,6 +3,7 @@ body {
   font-family: "Annie Use Your Telescope", cursive;
   background-size: cover;
   font-weight: 400;
+  overflow-y: hidden;
 }
 
 #header-full {
