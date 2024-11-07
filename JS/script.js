@@ -20,5 +20,16 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     const generatedCards = document.querySelectorAll(".card");
     const imageOverlay = document.getElementById("image-overlay");
-    const overlayImage = imageOverlay.querySelector("img");
+    const overlayImage = imageOverlay.querySelector("img").src;
+
+    generatedCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const imageSrc = card.querySelector("img").src;
+        overlayImage = imageSrc;
+        imageOverlay.classList.add("Show");
+      });
+    });
+    backButton.addEventListener("click", () => {
+      imageOverlay.classList.remove("show");
+    });
   });
