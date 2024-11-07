@@ -1,6 +1,6 @@
 body {
   background-image: url("../img/cork.png");
-
+  font-family: "Cedarville Cursive", cursive;
   background-size: cover;
 }
 
@@ -9,12 +9,41 @@ body {
   background-image: url("../img/wall.png");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Comic Sans MS", "Comic Sans";
 }
 
 header h1 {
   font-size: 100px;
 }
 
-img {
-  width: 150px;
+.card {
+  padding: 20px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 10px 0 0 0;
+}
+
+.card-wrap {
+  position: relative;
+}
+
+span {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 3%;
+}
+
+.card-wrap .span .img {
+  height: 24px;
+}
+
+@media only screen and (max-width: 678px) {
+  header h1 {
+    font-size: 50px;
+  }
 }
