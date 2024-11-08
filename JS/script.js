@@ -15,7 +15,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6") //Avvio della rich
           <div class="card-wrap h-100">
             <span><img src="./img/pin.svg" alt="pin" /></span>
             <div class="card h-100">
-              <img src=${photo.url} class="card-img-top" alt="..." />
+              <img src=${photo.url} class="card-img-top img-fluid" alt="..." />
               <div class="card-body">
                 <p class="card-text fs-4">${photo.title}</p>
               </div>
