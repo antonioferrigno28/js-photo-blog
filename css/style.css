@@ -24,12 +24,10 @@ header h1 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
   z-index: 2;
 }
 
@@ -65,10 +63,10 @@ span {
 }
 
 button.btn {
-  margin-left: 50px;
   padding: 10px 25px 10px 25px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 678px) {
