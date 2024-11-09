@@ -5,6 +5,8 @@ body {
   font-weight: 400;
 }
 
+/* HEADER */
+
 #header-full {
   height: 15vh;
   background-image: url("../img/wall.png");
@@ -17,6 +19,7 @@ header h1 {
   font-size: 100px;
 }
 
+/* OVERLAY */
 .overlay {
   position: fixed;
   top: 0;
@@ -38,6 +41,19 @@ header h1 {
   display: flex;
   opacity: 1;
 }
+
+#esc-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button.btn {
+  padding: 10px 25px 10px 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+/* CARDS & CARDS HOVER*/
 
 .card {
   padding: 20px;
@@ -73,10 +89,6 @@ span {
   top: 3%;
 }
 
-#esc-text {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .card-img,
 .card-img-top {
   border-top-left-radius: 0;
@@ -85,13 +97,6 @@ span {
 
 .card-wrap .span .img {
   height: 24px;
-}
-
-button.btn {
-  padding: 10px 25px 10px 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 0;
-  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 678px) {
